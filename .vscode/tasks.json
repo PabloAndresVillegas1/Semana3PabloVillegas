@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-cp",
+                "lib/mysql-connector-j-9.0.0.jar",
+                "-d",
+                "bin",
+                "src/controlador/*.java",
+                "src/modelo/*.java",
+                "src/vista/*.java",
+                "src/Main.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$javac"]
+        }
+    ]
+}
